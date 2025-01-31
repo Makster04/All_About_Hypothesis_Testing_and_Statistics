@@ -1,7 +1,6 @@
 ## Discrete vs Continuous
-![image](https://github.com/user-attachments/assets/78848ece-17bf-4c19-889b-5d6e33af5c62)
 
-#### Definitions
+### Definitions
 #### DISCRETE
 - **- Discrete Data** consists of distinct, separate values that can be counted. It typically involves whole numbers and cannot be subdivided meaningfully. Examples include the number of students in a class, number of cars in a parking lot, or shoe sizes.
 - **- Discrete function** is defined only at specific, separate points (e.g., integers or specific values). It is often represented as a set of distinct points rather than a continuous curve. Example: 𝑓(𝑥)= 𝑥^2 for 𝑥 being only whole number.
@@ -14,3 +13,4 @@
 #### Explanation of the Graphs
 - **- Discrete Data (Bar Chart)** – This represents the number of students in different classes. The values are distinct and countable.
 - **- Continuous Data (Histogram)** – This shows a distribution of individuals' heights. The values are measured and can take any value within a range.
+![image](https://github.com/user-attachments/assets/78848ece-17bf-4c19-889b-5d6e33af5c62)
