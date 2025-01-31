@@ -11,8 +11,9 @@
 - **- Continuous Function** is defined for all values in a given interval without breaks or jumps. It can be graphed as a smooth, unbroken curve. Example: 𝑓(𝑥)= 𝑥^2 for all real numbers 𝑥.
 
 ### Sample Graphs
-![be3edf12-bd77-4e29-a088-b4c301641d14](https://github.com/user-attachments/assets/c4c7a01a-7a23-4251-8cd2-86e3563d8231)
-#### Explanation of the Graphs
 - **- Discrete Data (Bar Chart)** – This represents the number of students in different classes. The values are distinct and countable.
 - **- Continuous Data (Histogram)** – This shows a distribution of individuals' heights. The values are measured and can take any value within a range.
+![be3edf12-bd77-4e29-a088-b4c301641d14](https://github.com/user-attachments/assets/c4c7a01a-7a23-4251-8cd2-86e3563d8231)
+
+### Sample Image
 ![image](https://github.com/user-attachments/assets/78848ece-17bf-4c19-889b-5d6e33af5c62)
