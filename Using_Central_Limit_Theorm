@@ -1,5 +1,4 @@
-python 
-``` 
+``` python
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -50,4 +49,5 @@ print(f"Sample Mean (X̄) Mean: {np.mean(sample_means):.2f}")
 print(f"Population Standard Deviation (σ): {pop_std:.2f}")
 print(f"Theoretical Standard Error (σ/√n): {standard_error:.2f}")
 print(f"Observed Standard Deviation of Sample Means: {np.std(sample_means, ddof=1):.2f}")
+
 ```
