@@ -9,8 +9,8 @@ The CLT states that regardless of the original population's distribution, the di
 - **- Sampling Distribution Mean and Standard Deviation:** The mean of the sample means approximates the population mean, and the standard deviation (standard error) is the population’s standard deviation divided by √n.
 
 ### 3. Importance of CLT:
-Simplifies Inferences: CLT allows for normal distribution approximations, enabling statistical tests and confidence intervals even when the original data isn’t normally distributed.
-Facilitates Hypothesis Testing: It makes it possible to apply tests like Z-tests and T-tests, which require normality in the sampling distribution.
+- **- Simplifies Inferences:** CLT allows for normal distribution approximations, enabling statistical tests and confidence intervals even when the original data isn’t normally distributed.
+- **- Facilitates Hypothesis Testing:** It makes it possible to apply tests like Z-tests and T-tests, which require normality in the sampling distribution.
 
 # THE LAB
 [The Actual Lab](https://github.com/Makster04/dsc-central-limit-theorem-lab.git)
