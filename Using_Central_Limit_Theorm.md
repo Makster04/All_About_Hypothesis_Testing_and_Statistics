@@ -1,4 +1,5 @@
 # Examples for Questions in the CLT Lab:
+[The Actual Lab](https://github.com/Makster04/dsc-central-limit-theorem-lab.git)
 
 ## 1. Check if Normally Distributed
 ``` python
