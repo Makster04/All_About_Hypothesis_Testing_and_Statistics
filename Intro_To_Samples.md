@@ -43,6 +43,135 @@ This analysis demonstrates the **Law of Large Numbers**, showing that as more sa
 ---
 
 # **Python Code for Sampling Analysis**
+1. Importing Data and Calculating Population Mean
+``` python
+python
+Copy
+Edit
+import pandas as pd
+import numpy as np
+
+# Load Titanic dataset
+df = pd.read_csv('titanic.csv', index_col=0)
+df
+```
+
+2. Calculating the Population Mean
+``` python
+python
+Copy
+Edit
+# Calculate the population mean for the age column
+population_mean = df.Age.mean()
+print(population_mean)
+```
+
+3. Sampling and Calculating Sample Mean
+```python
+# Take a sample of 50 people
+sample = df.sample(n=50, random_state=22)
+
+# Calculate the sample mean
+sample_mean = sample.Age.mean()
+print(sample_mean)
+```
+
+4. Calculating Percent Error
+``` python
+# Find the difference between the sample and population means
+err = np.abs(sample_mean - population_mean)
+
+# Calculate the percent error
+per_err = err / population_mean
+print(per_err)
+```
+
+5. Simulating Five Separate Data Collection Processes
+``` python
+# Simulate five separate samples
+five_sample_means = []
+for i in range(5):
+    sample = df.sample(n=50, random_state=i+100)
+    five_sample_means.append(sample.Age.mean())
+
+print(five_sample_means)
+```
+
+6. Calculating Errors for Five Samples
+
+``` python
+# Calculate errors for the five samples
+five_sample_errors = [np.abs(sample_mean - population_mean) / population_mean for sample_mean in five_sample_means]
+print(five_sample_errors)
+```
+
+7. Visualizing Five Sample Means
+   
+``` python
+import matplotlib.pyplot as plt
+import seaborn as sns
+from matplotlib.lines import Line2D
+
+# Plotting the bar chart for five sample means
+x_labels = [f"Sample {x}" for x in range(1, 6)]
+
+fig, ax = plt.subplots(figsize=(7,6))
+
+ax.bar(x_labels, five_sample_means)
+ax.set_ylabel("Mean Age")
+ax.axhline(y=population_mean, color="red", linewidth=5, linestyle="--")
+ax.legend(
+    handles=[Line2D([0], [0], color="red", linestyle="--")],
+    labels=["True Population Mean"],
+    fontsize="large"
+)
+plt.show()
+```
+
+8. Simulating 10,000 Samples
+```python
+# Simulate 10,000 samples
+sample_means = []
+for i in range(10**4):
+    sample = df.sample(n=50, random_state=i)
+    sample_means.append(sample.Age.mean())
+
+print(len(sample_means))
+```
+9. Visualizing the Distribution of Sample Means
+
+```python
+# Plotting the histogram for the distribution of sample means
+fig, ax = plt.subplots(figsize=(8,6))
+
+ax.hist(sample_means, bins="auto")
+ax.set_xlabel("Mean Age")
+ax.set_ylabel("Count of Samples")
+ax.axvline(x=population_mean, color="red", linewidth=5, linestyle="--")
+ax.legend(
+    handles=[Line2D([0], [0], color="white", marker="|", markersize=15, markeredgewidth=1.5, markeredgecolor="red")],
+    labels=["True Population Mean"],
+    fontsize="large"
+)
+plt.show()
+```
+
+10. Calculating the Mean of Sample Means
+```python
+# Calculate the mean of sample means
+ten_thousand_samples_mean = np.mean(sample_means)
+print(ten_thousand_samples_mean)
+```
+
+11. Calculating Accuracy of Sample Mean Estimate
+```python
+# Calculate the accuracy of the sample means
+err = np.abs(ten_thousand_samples_mean - population_mean) / population_mean
+accuracy = 1 - err
+print(accuracy)
+```
+
+# OTHER Codings
 ```python
 import numpy as np
 
