@@ -45,9 +45,6 @@ This analysis demonstrates the **Law of Large Numbers**, showing that as more sa
 # **Python Code for Sampling Analysis**
 1. Importing Data and Calculating Population Mean
 ``` python
-python
-Copy
-Edit
 import pandas as pd
 import numpy as np
 
@@ -58,9 +55,6 @@ df
 
 2. Calculating the Population Mean
 ``` python
-python
-Copy
-Edit
 # Calculate the population mean for the age column
 population_mean = df.Age.mean()
 print(population_mean)
