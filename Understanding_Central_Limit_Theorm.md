@@ -1,4 +1,4 @@
-# Understanding Central Limit Theorm:
+# Understanding Central Limit Theorm
 ### 1. Definition:
 The CLT states that regardless of the original population's distribution, the distribution of sample means from repeated sampling will approach a normal distribution as the sample size increases. This holds true if the sample size is large enough (typically n ≥ 30).
 
