@@ -1,11 +1,11 @@
 Differentiating PMF, PDF, and CDF in Terms of Cumulative Probabilities
 
 ### PMF (Probability Mass Function)
-- Purpose: Defines the probability of a discrete random variable taking a specific value.
-- Mathematically: 𝑃(𝑋=𝑥)
-- Example: 𝑃(𝑋=2)= 0.3 (which means there's a 30% chance that 
+**- Purpose:** Defines the probability of a discrete random variable taking a specific value.
+**- Mathematically:** 𝑃(𝑋=𝑥)
+**- Example:** 𝑃(𝑋=2)= 0.3 (which means there's a 30% chance that 
 𝑋 equals 2.)
-- The sum of all PMF values must equal 1.
+- *-* The sum of all PMF values must equal 1.
 
 ### PDF (Probability Density Function)
 - Purpose: Defines the probability density of a continuous random variable.
