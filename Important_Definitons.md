@@ -91,6 +91,10 @@
 **Importance:** The set of values in a statistical test where, if the test statistic falls within this region, the null hypothesis is rejected. Its size depends on the chosen significance level.
 - **Example:** In a clinical study, if a test statistic falls within the critical region (e.g., beyond ±1.96 for a 95% confidence level), the new treatment is considered significantly different.
 
+### Standard Error
+**Importance:** Measures the accuracy of a sample statistic (e.g., sample mean) in estimating the population parameter. A smaller standard error indicates that the sample mean is a more precise estimate of the population mean.
+- **Example:** If a researcher surveys 100 students about their test scores and finds an average score of 80 with a standard error of 2, it means the true population mean is likely within ±2 points of the sample mean.
+
 ### Alpha (α)
 **Importance:** The probability of rejecting the null hypothesis when it is actually true, also known as the significance level. Common values are 0.05 or 0.01, indicating acceptable error rates.
 - **Example:** If α = 0.05 in an A/B test for a website change, there’s a 5% risk of falsely concluding the new design improves user engagement when it actually doesn’t.
