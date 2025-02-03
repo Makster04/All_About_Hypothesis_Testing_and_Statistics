@@ -27,7 +27,25 @@
 ### Null Hypothesis
 **Importance:** A statistical assumption stating no effect or difference exists in a population. It serves as the default claim, tested against alternative hypotheses to determine statistical significance in research.
 - **Example**: In a drug effectiveness study, the null hypothesis (H₀) might be "The new drug has no effect on blood pressure compared to a placebo." If statistical analysis shows a low p-value (e.g., < 0.05), researchers may reject H₀ and conclude the drug is effective.
-- 
+
+
+### Experimental Design
+**Importance:** The process of planning a study to ensure valid, reliable, and unbiased results. It defines variables, controls confounding factors, and determines how data will be collected and analyzed.
+- **Example:** A pharmaceutical company designs a double-blind experiment to test a new drug, ensuring neither patients nor researchers know who receives the treatment or placebo.
+
+### Effect Size
+**Importance:** Measures the magnitude of a difference between groups, indicating practical significance beyond p-values. Larger effect sizes suggest stronger relationships or differences.
+- **Example:** A study finds a new teaching method improves test scores by an average of 15 points, representing a large effect size with real-world importance.
+
+### One and Two Sample T-Tests
+**Importance:** Statistical tests comparing means; a one-sample t-test compares a sample mean to a known value, while a two-sample t-test compares means of two independent groups.
+- **Example:** A one-sample t-test checks if a factory’s output differs from 100 units per day; a two-sample t-test compares average salaries between two companies.
+
+### Type 1 and Type 2 Errors
+**Importance:** Type 1 error (false positive) occurs when a true null hypothesis is rejected; Type 2 error (false negative) occurs when a false null hypothesis is not rejected.
+- **Example:** A Type 1 error happens if a court wrongly convicts an innocent person, while a Type 2 error happens if a guilty person is acquitted.
+
+## Other Defintions
 ### P-Value
 **Importance:** The probability of obtaining results as extreme as the observed ones, assuming the null hypothesis is true. A smaller p-value suggests stronger evidence against the null hypothesis.
 - **Example:** A p-value of 0.03 in a drug trial suggests only a 3% chance the observed effect is due to random variation, so researchers may conclude the drug is effective.
