@@ -1,5 +1,15 @@
 # Important Definitions
 
+## Intro to Experimental Learning
+1. **Make an Observation:** Start by observing something that sparks your curiosity, helping refine a specific question to test, like whether a drug affects headaches or if button color impacts website sales.
+2. **Examine the Research:** Review existing research to see if anyone has already answered your question, which might inform your experiment or answer it outright.
+3. **Form a Hypothesis:** Develop two hypotheses: the Alternative Hypothesis (your educated guess) and the Null Hypothesis (the opposite). This defines the experiment’s potential outcomes.
+4. **Conduct an Experiment:** Test your hypothesis through a well-structured experiment that controls for randomness and external variables, ensuring valid results that reflect the relationship between variables.
+5. **Analyze Experimental Results:** Examine the collected data, filter out irrelevant information, and determine if the findings are statistically significant.
+6. **Draw Conclusions:** Use the analysis to evaluate if the hypothesis is supported or not. Typically, scientists fail to reject the null hypothesis or reject it, but rarely claim causal relationships outright.
+
+## Other Defintions
+
 ### Hypothesis Test
 **Importance:** A method to determine if there is enough statistical evidence to reject a null hypothesis in favor of an alternative hypothesis. It helps make data-driven decisions.
 - **Example:** A company tests whether a new marketing strategy increases sales. If statistical analysis shows significant improvement, they reject the null hypothesis and implement the strategy.
