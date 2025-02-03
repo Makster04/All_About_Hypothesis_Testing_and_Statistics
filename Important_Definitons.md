@@ -12,6 +12,18 @@
 **Importance**: A statistical test used to compare means of two groups when the sample size is small (n < 30) or population variance is unknown. It evaluates significant differences.
 - **Example:** A scientist compares the average weight loss of two diet plans using a t-test to determine if one plan is significantly more effective.
 
+### Two-Tailed Test
+**Importance:** A hypothesis test that checks for differences in both directions, meaning extreme values on either side of the distribution can lead to rejecting the null hypothesis.
+- **Example:** A company tests if a new product's average rating differs from 4 stars. Both higher and lower ratings could reject the null hypothesis.
+
+### Left-Tailed Test
+**Importance:** A hypothesis test that checks if a parameter is significantly less than a given value. It focuses only on the lower tail of the distribution.
+- **Example:** A manufacturer tests if a machine produces fewer than 500 units per hour. If the test statistic falls in the left tail, they may adjust the machine.
+
+### Right-Tailed Test
+**Importance:** A hypothesis test that checks if a parameter is significantly greater than a given value. It focuses only on the upper tail of the distribution.
+- **Example:** A professor tests if students score significantly higher than 75 on an exam. If the test statistic is in the right tail, the null hypothesis is rejected.
+
 ### Null Hypothesis
 **Importance:** A statistical assumption stating no effect or difference exists in a population. It serves as the default claim, tested against alternative hypotheses to determine statistical significance in research.
 - **Example**: In a drug effectiveness study, the null hypothesis (H₀) might be "The new drug has no effect on blood pressure compared to a placebo." If statistical analysis shows a low p-value (e.g., < 0.05), researchers may reject H₀ and conclude the drug is effective.
