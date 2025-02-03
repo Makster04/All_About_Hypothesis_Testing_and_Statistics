@@ -71,6 +71,14 @@
 **Importance:** The probability of obtaining results as extreme as the observed ones, assuming the null hypothesis is true. A smaller p-value suggests stronger evidence against the null hypothesis.
 - **Example:** A p-value of 0.03 in a drug trial suggests only a 3% chance the observed effect is due to random variation, so researchers may conclude the drug is effective.
 
+### T-Value
+**Importance:** The test statistic in a t-test that measures how far the sample mean deviates from the population mean in terms of standard error. A larger absolute t-value indicates a greater difference between groups.
+- **Example:** In a study comparing test scores of two teaching methods, a t-value of 2.5 suggests the observed difference is 2.5 times the standard error, helping determine if the difference is statistically significant.
+
+### T-Distribution
+**Importance:** A probability distribution used in hypothesis testing when the sample size is small, and the population standard deviation is unknown. It accounts for increased variability in smaller samples.
+- **Example:** When testing whether a new study technique improves exam scores with a sample of 15 students, the t-distribution is used instead of the normal distribution to calculate confidence intervals and p-values.
+
 ### Sigma (σ)
 **Importance:** A measure of standard deviation in a population, representing data spread around the mean. Larger sigma values indicate greater variability, while smaller values suggest tightly clustered data points.
 - **Example:** If a factory's machine produces screws with a diameter of 10mm and σ = 0.1mm, quality control can ensure deviations remain within acceptable limits.
