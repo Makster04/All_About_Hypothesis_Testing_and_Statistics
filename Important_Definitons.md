@@ -1,4 +1,17 @@
 # Important Definitions
+
+### Hypothesis Test
+**Importance:** A method to determine if there is enough statistical evidence to reject a null hypothesis in favor of an alternative hypothesis. It helps make data-driven decisions.
+- **Example:** A company tests whether a new marketing strategy increases sales. If statistical analysis shows significant improvement, they reject the null hypothesis and implement the strategy.
+
+### Z-Test
+**Importance:** A statistical test used to compare population means when the sample size is large (n > 30) and the population variance is known. It helps assess differences between groups.
+- **Example:** A researcher tests whether the average IQ of students in a school differs from the national average of 100 using a Z-test.
+
+### T-Test
+**Importance**: A statistical test used to compare means of two groups when the sample size is small (n < 30) or population variance is unknown. It evaluates significant differences.
+- **Example:** A scientist compares the average weight loss of two diet plans using a t-test to determine if one plan is significantly more effective.
+
 ### Null Hypothesis
 **Importance:** A statistical assumption stating no effect or difference exists in a population. It serves as the default claim, tested against alternative hypotheses to determine statistical significance in research.
 - **Example**: In a drug effectiveness study, the null hypothesis (H₀) might be "The new drug has no effect on blood pressure compared to a placebo." If statistical analysis shows a low p-value (e.g., < 0.05), researchers may reject H₀ and conclude the drug is effective.
