@@ -19,7 +19,7 @@ The one-sample t-test checks if the sample mean differs from a known value (e.g.
 
 ## Samples vs. Tails  
 - **One-Tail Test**: The alternative hypothesis is directional (e.g., μ < 3 or μ > 3).
-- **Two-Tail Test**: The alternative hypothesis is non-directional (e.g., μ ≠ 3).
+- **Two-Tail Test**: The alternative hypothesis is non-directional. Its not equal to the mean. Site A is different than like B. Like Site E is either more or less (e.g., μ ≠ 3).
 
 ## Assumptions for T-Tests  
 - Sample observations should be numeric and continuous.
