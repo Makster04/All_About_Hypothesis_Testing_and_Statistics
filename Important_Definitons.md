@@ -9,7 +9,7 @@
 
 ### Z-Score
 **Importance:** Standardizes data, allowing comparison across different datasets and determining the likelihood of specific values occurring.
-Example: A student's test score of 85 with a mean of 75 and σ = 5 has a Z-score of 2, meaning the score is 2 standard deviations above average.
+- **Example:** A student's test score of 85 with a mean of 75 and σ = 5 has a Z-score of 2, meaning the score is 2 standard deviations above average.
 
 ### Critical Region
 **Importance:** Defines thresholds for rejecting a null hypothesis; ensures rigorous decision-making in hypothesis testing.
