@@ -7,6 +7,14 @@ These terms are related to hypothesis formulation and testing procedures.
 **Importance:** The default assumption stating no effect or difference exists.  
 **Example:** In a drug study, H₀ might state that the drug has no effect on blood pressure.
 
+### True Null Hypothesis
+**Importance:** The null hypothesis is correct, meaning there is no significant effect or difference.
+**Example:** If a drug has no effect on blood pressure, the true null hypothesis holds when testing shows no difference.
+
+### False Null Hypothesis
+**Importance:** The null hypothesis is incorrect, and there is an effect or difference.
+**Example:** If the drug significantly lowers blood pressure, the null hypothesis is false.
+
 ### Alternative Hypothesis (H₁)
 **Importance:** The hypothesis that contradicts the null, indicating an effect or difference exists.  
 **Example:** In a drug study, H₁ states that the drug lowers blood pressure.
@@ -49,11 +57,11 @@ These terms are related to hypothesis formulation and testing procedures.
 Understanding the risks and measures of significance in testing.
 
 ### Type 1 Error (False Positive)
-**Importance:** Rejecting a true null hypothesis.  
+**Importance:** ccurs when the null hypothesis is rejected, but it is actually true (false alarm). This means you wrongly conclude that there is an effect or difference when there isn’t.
 **Example:** Convicting an innocent person in court.
 
 ### Type 2 Error (False Negative)
-**Importance:** Failing to reject a false null hypothesis.  
+**Importance:** Occurs when the null hypothesis is not rejected, but it is actually false (missing an effect). This means you fail to detect a real effect or difference.
 **Example:** Acquitting a guilty person in court.
 
 ### P-Value
