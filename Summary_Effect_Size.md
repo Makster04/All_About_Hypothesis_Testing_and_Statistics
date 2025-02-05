@@ -98,3 +98,6 @@ print(f"Female: Mean ≈ {female_mean_calculated:.2f} cm, SD ≈ {female_sd_calc
 # Calculate unstandardized effect size (difference in means)
 effect_size = male_mean_calculated - female_mean_calculated
 print(f"Unstandardized Effect Size (Difference in Means): {effect_size:.2f} cm")
+```
+### Conclusion:
+Effect size provides deeper insight into the practical significance of results, helping researchers and data scientists make better-informed decisions. By combining effect size with visualizations and statistical tools like Python’s SciPy, you can better interpret and communicate your findings.
