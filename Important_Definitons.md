@@ -1,79 +1,149 @@
-## Defintions
+# Definitions
 
-### Hypothesis Test
-**Importance:** A method to determine if there is enough statistical evidence to reject a null hypothesis in favor of an alternative hypothesis. It helps make data-driven decisions.
-- **Example:** A company tests whether a new marketing strategy increases sales. If statistical analysis shows significant improvement, they reject the null hypothesis and implement the strategy.
+## 1. Hypothesis Testing & Types of Tests
+These terms are related to hypothesis formulation and testing procedures.
+
+### Null Hypothesis (H₀)
+**Importance:** The default assumption stating no effect or difference exists.  
+**Example:** In a drug study, H₀ might state that the drug has no effect on blood pressure.
+
+### Alternative Hypothesis (H₁)
+**Importance:** The hypothesis that contradicts the null, indicating an effect or difference exists.  
+**Example:** In a drug study, H₁ states that the drug lowers blood pressure.
 
 ### Z-Test
-**Importance:** A statistical test used to compare population means when the sample size is large (n > 30) and the population variance is known. It helps assess differences between groups.
-- **Example:** A researcher tests whether the average IQ of students in a school differs from the national average of 100 using a Z-test.
+**Importance:** Compares population means when sample size is large (n > 30) and variance is known.  
+**Example:** Testing if a school’s average IQ differs from the national average.
 
 ### T-Test
-**Importance**: A statistical test used to compare means of two groups when the sample size is small (n < 30) or population variance is unknown. It evaluates significant differences.
-- **Example:** A scientist compares the average weight loss of two diet plans using a t-test to determine if one plan is significantly more effective.
+**Importance:** Compares means of two groups when the sample size is small (n < 30) or variance is unknown.  
+**Example:** Comparing two diet plans for significant differences in weight loss.
+
+### One-Sample T-Test
+**Importance:** Compares a sample mean to a known value.  
+**Example:** Testing if a factory’s output differs from 100 units/day.
+
+### Two-Sample T-Test
+**Importance:** Compares means of two independent groups.  
+**Example:** Comparing salaries between two companies.
+
+### Paired T-Test
+**Importance:** Compares means from the same group at different times (before and after).  
+**Example:** Comparing students’ test scores before and after tutoring.
+
+### One-Tailed Test
+**Importance:** Tests for a significant difference in one direction only (greater or less).  
+**Example:** Testing if students score higher than 75 on an exam.
 
 ### Two-Tailed Test
-**Importance:** A hypothesis test that checks for differences in both directions, meaning extreme values on either side of the distribution can lead to rejecting the null hypothesis.
-- **Example:** A company tests if a new product's average rating differs from 4 stars. Both higher and lower ratings could reject the null hypothesis.
+**Importance:** Tests for differences in both directions.  
+**Example:** Checking if a product’s average rating differs from 4 stars.
 
-### Left-Tailed Test
-**Importance:** A hypothesis test that checks if a parameter is significantly less than a given value. It focuses only on the lower tail of the distribution.
-- **Example:** A manufacturer tests if a machine produces fewer than 500 units per hour. If the test statistic falls in the left tail, they may adjust the machine.
+### T-Test IN-Power Object
+**Importance:** Refers to a tool or method used to calculate and assess the power of a t-test within a specific statistical software or framework.  
+**Example:** The T-Test IN-Power object in statistical software can help determine if your test has enough power to detect an effect.
 
-### Right-Tailed Test
-**Importance:** A hypothesis test that checks if a parameter is significantly greater than a given value. It focuses only on the upper tail of the distribution.
-- **Example:** A professor tests if students score significantly higher than 75 on an exam. If the test statistic is in the right tail, the null hypothesis is rejected.
+---
 
-### Null Hypothesis
-**Importance:** A statistical assumption stating no effect or difference exists in a population. It serves as the default claim, tested against alternative hypotheses to determine statistical significance in research.
-- **Example**: In a drug effectiveness study, the null hypothesis (H₀) might be "The new drug has no effect on blood pressure compared to a placebo." If statistical analysis shows a low p-value (e.g., < 0.05), researchers may reject H₀ and conclude the drug is effective.
+## 2. Statistical Errors & Significance
+Understanding the risks and measures of significance in testing.
 
+### Type 1 Error (False Positive)
+**Importance:** Rejecting a true null hypothesis.  
+**Example:** Convicting an innocent person in court.
 
-### Experimental Design
-**Importance:** The process of planning a study to ensure valid, reliable, and unbiased results. It defines variables, controls confounding factors, and determines how data will be collected and analyzed.
-- **Example:** A pharmaceutical company designs a double-blind experiment to test a new drug, ensuring neither patients nor researchers know who receives the treatment or placebo.
+### Type 2 Error (False Negative)
+**Importance:** Failing to reject a false null hypothesis.  
+**Example:** Acquitting a guilty person in court.
 
-### Effect Size
-**Importance:** Measures the magnitude of a difference between groups, indicating practical significance beyond p-values. Larger effect sizes suggest stronger relationships or differences.
-- **Example:** A study finds a new teaching method improves test scores by an average of 15 points, representing a large effect size with real-world importance.
-
-### One and Two Sample T-Tests
-**Importance:** Statistical tests comparing means; a one-sample t-test compares a sample mean to a known value, while a two-sample t-test compares means of two independent groups.
-- **Example:** A one-sample t-test checks if a factory’s output differs from 100 units per day; a two-sample t-test compares average salaries between two companies.
-
-### Type 1 and Type 2 Errors
-**Importance:** Type 1 error (false positive) occurs when a true null hypothesis is rejected; Type 2 error (false negative) occurs when a false null hypothesis is not rejected.
-- **Example:** A Type 1 error happens if a court wrongly convicts an innocent person, while a Type 2 error happens if a guilty person is acquitted.
-
-## Other Defintions
 ### P-Value
-**Importance:** The probability of obtaining results as extreme as the observed ones, assuming the null hypothesis is true. A smaller p-value suggests stronger evidence against the null hypothesis.
-- **Example:** A p-value of 0.03 in a drug trial suggests only a 3% chance the observed effect is due to random variation, so researchers may conclude the drug is effective.
-
-### T-Value
-**Importance:** The test statistic in a t-test that measures how far the sample mean deviates from the population mean in terms of standard error. A larger absolute t-value indicates a greater difference between groups.
-- **Example:** In a study comparing test scores of two teaching methods, a t-value of 2.5 suggests the observed difference is 2.5 times the standard error, helping determine if the difference is statistically significant.
-
-### T-Distribution
-**Importance:** A probability distribution used in hypothesis testing when the sample size is small, and the population standard deviation is unknown. It accounts for increased variability in smaller samples.
-- **Example:** When testing whether a new study technique improves exam scores with a sample of 15 students, the t-distribution is used instead of the normal distribution to calculate confidence intervals and p-values.
-
-### Sigma (σ)
-**Importance:** A measure of standard deviation in a population, representing data spread around the mean. Larger sigma values indicate greater variability, while smaller values suggest tightly clustered data points.
-- **Example:** If a factory's machine produces screws with a diameter of 10mm and σ = 0.1mm, quality control can ensure deviations remain within acceptable limits.
-
-### Z-Score
-**Importance:** A standardized score indicating how many standard deviations a data point is from the mean. Positive values are above the mean; negative values are below the mean.
-- **Example:** A student's test score of 85 with a mean of 75 and σ = 5 has a Z-score of 2, meaning the score is 2 standard deviations above average.
-
-### Critical Region
-**Importance:** The set of values in a statistical test where, if the test statistic falls within this region, the null hypothesis is rejected. Its size depends on the chosen significance level.
-- **Example:** In a clinical study, if a test statistic falls within the critical region (e.g., beyond ±1.96 for a 95% confidence level), the new treatment is considered significantly different.
-
-### Standard Error
-**Importance:** Measures the accuracy of a sample statistic (e.g., sample mean) in estimating the population parameter. A smaller standard error indicates that the sample mean is a more precise estimate of the population mean.
-- **Example:** If a researcher surveys 100 students about their test scores and finds an average score of 80 with a standard error of 2, it means the true population mean is likely within ±2 points of the sample mean.
+**Importance:** Probability of obtaining results as extreme as the observed ones, assuming H₀ is true.  
+**Example:** A p-value of 0.03 indicates a 3% chance the result is due to random variation.
 
 ### Alpha (α)
-**Importance:** The probability of rejecting the null hypothesis when it is actually true, also known as the significance level. Common values are 0.05 or 0.01, indicating acceptable error rates.
-- **Example:** If α = 0.05 in an A/B test for a website change, there’s a 5% risk of falsely concluding the new design improves user engagement when it actually doesn’t.
+**Importance:** The significance level, or the probability of Type 1 error (commonly 0.05 or 0.01).  
+**Example:** With α = 0.05, there’s a 5% chance of rejecting a true H₀.
+
+### Critical Region
+**Importance:** The set of values where H₀ is rejected.  
+**Example:** In a 95% confidence test, results beyond ±1.96 fall in the critical region.
+
+### Underlying Distribution Overlap
+**Importance:** The degree to which two distributions share common values, affecting the ability to distinguish between groups.  
+**Example:** If treatment and control groups have overlapping distributions, it’s harder to detect a significant difference.
+
+### Fluctuation
+**Importance:** Describes the variability or random changes in data, often affecting measurements or outcomes.  
+**Example:** Daily stock prices fluctuate due to market conditions.
+
+---
+
+## 3. Distribution & Variability
+Understanding how data is distributed and varies.
+
+### Standard Deviation (σ)
+**Importance:** Measures the spread of data around the mean.  
+**Example:** If test scores have σ = 10, most scores are within ±10 of the mean.
+
+### Standard Error (SE)
+**Importance:** Measures the accuracy of the sample mean as an estimate of the population mean.  
+**Example:** SE = 2 indicates the population mean is likely within ±2 points of the sample mean.
+
+### T-Distribution
+**Importance:** Used for small sample sizes; accounts for variability.  
+**Example:** Used in a study with only 15 participants.
+
+### Z-Score
+**Importance:** A standardized score indicating how many standard deviations a data point is from the mean.  
+**Example:** A test score with a Z-score of 2 is 2 SDs above average.
+
+---
+
+## 4. Effect & Practical Significance
+Measuring and interpreting the importance of findings.
+
+### Effect Size
+**Importance:** Measures the magnitude of differences; indicates practical significance.  
+**Example:** A large effect size means the result is meaningful beyond statistical significance.
+
+---
+
+## 5. Research Design & Study Setup
+Proper planning ensures reliable results.
+
+### Experimental Design
+**Importance:** Planning a study to ensure valid and reliable results.  
+**Example:** A double-blind study to eliminate bias in drug trials.
+
+### Random Sampling
+**Importance:** Ensures every individual has an equal chance of being selected, reducing bias.  
+**Example:** Randomly selecting participants from a population.
+
+### Random Assignment
+**Importance:** Randomly assigning participants to control or experimental groups to reduce confounding variables.  
+**Example:** Assigning patients to a treatment group or placebo group randomly.
+
+### Control Group
+**Importance:** A baseline group that does not receive treatment, used for comparison.  
+**Example:** A placebo group in a drug trial.
+
+### Threshold Power
+**Importance:** The minimum power needed to detect a true effect with statistical significance. Helps reduce Type 2 errors.  
+**Example:** A threshold power of 80% ensures an adequate chance of detecting a true effect.
+
+---
+
+## 6. Advanced Concepts
+For deeper statistical understanding.
+
+### Confidence Interval (CI)
+**Importance:** A range of values likely to contain the population parameter.  
+**Example:** A 95% CI for mean weight loss might be 5–10 lbs.
+
+### Power of a Test
+**Importance:** The probability of correctly rejecting a false null hypothesis (avoiding Type 2 error).  
+**Example:** A study with 80% power has a good chance of detecting a true effect.
+
+### Degrees of Freedom (df)
+**Importance:** Number of independent values in a calculation; affects critical values in t-tests.  
+**Example:** In a t-test with 10 samples, df = 9.
