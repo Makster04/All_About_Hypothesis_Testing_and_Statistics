@@ -33,8 +33,8 @@ SciPy provides tools for scientific computing, including calculating effect size
 Use `scipy.stats.norm()` to create normal distributions and calculate probability density functions (PDFs).
 
 ### Example Python Code:
-
 ```python
+
 import scipy.stats
 import matplotlib.pyplot as plt
 import numpy as np
@@ -59,18 +59,18 @@ plt.plot(xs, ys, label='Female', color='#fdc086')
 plt.xlabel('Height (cm)')
 plt.legend()
 plt.show()
-
+```
 
 # Simple Effect Size Calculation
 
 The unstandardized effect size is the difference between group means. Use `scipy.stats.rvs()` to generate random samples and calculate their means and standard deviations.
+
 
 ### Example output for male and female samples:
 - **Male**: Mean ≈ 177.89 cm, SD ≈ 7.22
 - **Female**: Mean ≈ 162.92 cm, SD ≈ 7.26
 
 ### Example Python Code:
-
 ```python
 import scipy.stats
 import numpy as np
