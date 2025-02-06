@@ -43,6 +43,7 @@ Effect size measures the strength of the relationship or difference, giving prac
 ## Important Equations and Python Implementations  
 
 ### 1. Z-Test (for Population Mean)  
+The Z-test is used to determine whether there is a significant difference between the population mean and the sample mean.
 
 **Equation:**  
 \[ Z = \frac{X - \mu}{\sigma / \sqrt{n}} \]  
@@ -72,6 +73,7 @@ print(f"Z-score: {z_score}, P-value: {p_value}")
 ```
 
 ## 2. T-Test (for Population Mean)
+The T-test is used when the population standard deviation is unknown, and it's based on the sample standard deviation.
 
 ### Equation:
 \[
@@ -98,6 +100,7 @@ print(f"T-statistic: {t_stat}, P-value: {p_value}")
 # Statistical Tests and Effect Size
 
 ## 3. Chi-Square Test (for Independence)
+The Chi-square test is used to assess whether two categorical variables are independent of each other.
 
 ### Equation:
 \[
@@ -120,6 +123,7 @@ print(f"Chi-square statistic: {chi2_stat}, P-value: {p_value}")
 # Statistical Tests and Effect Size
 
 ## 4. One-Way ANOVA (for Comparing Means)
+One-way ANOVA tests if there are statistically significant differences between the means of three or more independent groups.
 
 ### Python Code:
 ```python
@@ -134,6 +138,7 @@ print(f"F-statistic: {f_stat}, P-value: {p_value}")
 ```
 
 # 5. Effect Size (Cohen's d)
+Cohen's d measures the effect size between two groups, indicating how large the difference is between them.
 
 ### Equation:
 \[
@@ -161,3 +166,5 @@ cohen_d = (mean1 - mean2) / pooled_std
 
 print(f"Cohen's d: {cohen_d}")
 ```
+
+
