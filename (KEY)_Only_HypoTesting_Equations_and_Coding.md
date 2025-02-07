@@ -30,9 +30,9 @@ Hypothesis testing is a statistical method used to make inferences or draw concl
 
 ### a. Sample Size (n)
 **Equation:**
-\[
+**$\[
 n = \text{number of data points in the sample}
-\]
+\]$**
 
 **Python Implementation:**
 ```python
@@ -43,9 +43,9 @@ print(f"Sample size: {n}")
 
 ### b. Sample Mean (\( \bar{x} \))
 **Equation:**
-\[
+**$\[
 \bar{x} = \frac{\sum x_i}{n}
-\]
+\]$**
 
 **Python Implementation:**
 ```python
@@ -68,9 +68,9 @@ print(f"Sample standard deviation: {sample_std:.2f}")
 
 ### d. Z-Score
 **Equation:**
-\[
+**$\[
 z = \frac{\bar{x} - \mu}{\frac{\sigma}{\sqrt{n}}}
-\]
+\]$**
 
 **Python Implementation:**
 ```python
@@ -82,9 +82,9 @@ print(f"Z-score: {z:.2f}")
 
 ### e. Margin of Error (ME)
 **Equation:**
-\[
+**$\[
 ME = z \times \frac{\sigma}{\sqrt{n}}
-\]
+\]$**
 
 **Python Implementation:**
 ```python
@@ -95,9 +95,9 @@ print(f"Margin of Error: ±{margin_of_error:.2f}")
 
 ### f. Cohen's d
 **Equation:**
-\[
+**$\[
 d = \frac{\bar{x}_1 - \bar{x}_2}{s_p} \quad \text{where } s_p \text{ is the pooled standard deviation.}
-\]
+\]$**
 
 **Python Implementation:**
 ```python
@@ -112,17 +112,17 @@ print(f"Cohen's d: {cohens_d:.2f}")
 
 ### g. Probability Calculations
 **Cumulative Distribution Function (CDF):**
-\[
+**$\[
 P(X \leq x) = \text{CDF}(x)
-\]
+\]$**
 **Probability Density Function (PDF):**
-\[
+**$\[
 P(X = x) = \text{PDF}(x)
-\]
+\]$**
 **Probability Mass Function (PMF) for Discrete Variables:**
-\[
+**$\[
 P(X = x) = \text{PMF}(x)
-\]
+\]$**
 
 **Python Implementation:**
 ```python
