@@ -20,9 +20,9 @@ print(f"Sample size: {n}")
 
 ### b. Sample Mean **$( \bar{x} )$**
 - **Equation:**
-- **$ \[
+- **$\[
 \bar{x} = \frac{\sum x_i}{n}
-\] $**
+\]$**
 
 **Python Implementation:**
 ```python
