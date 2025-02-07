@@ -5,7 +5,7 @@ Hypothesis testing is a statistical method used to make inferences or draw concl
 
 ## 3. Equations and Python Implementation
 
-### a. Sample Size **$(n)$**
+### a) Sample Size **$(n)$**
 - **Equation:**
 - **$\[
 n = \text{number of data points in the sample}
@@ -18,7 +18,7 @@ n = len(sample)
 print(f"Sample size: {n}")
 ```
 
-### b. Sample Mean **$( \bar{x} )$**
+### b) Sample Mean **$( \bar{x} )$**
 - **Equation:**
 - **$\[
 \bar{x} = \frac{\sum x_i}{n}
@@ -30,7 +30,7 @@ sample_mean = sum(sample) / n
 print(f"Sample mean: {sample_mean:.2f}")
 ```
 
-### c. Standard Deviation **$(s)$**
+### c) Standard Deviation **$(s)$**
 - **Equation:**
 - **$\[
 s = \sqrt{\frac{\sum (x_i - \bar{x})^2}{n-1}}
@@ -57,7 +57,7 @@ sample_std = math.sqrt(variance)
 print(f"Sample standard deviation: {sample_std:.2f}")
 ```
 
-### d. Z-Score
+### d) Z-Score
 - **Equation:**
 - **$\[
 z = \frac{\bar{x} - \mu}{\frac{\sigma}{\sqrt{n}}}
@@ -80,7 +80,7 @@ z = (sample_mean - mu) / (sigma / math.sqrt(n))  # Use math.sqrt
 print(f"Z-score: {z:.2f}")
 ```
 
-### e. Margin of Error **$(ME)$**
+### e) Margin of Error **$(ME)$**
 - **Equation:**
 - **$\[
 ME = z \times \frac{\sigma}{\sqrt{n}}
@@ -101,7 +101,34 @@ margin_of_error = z_critical * (sigma / math.sqrt(n))  # Use math.sqrt
 print(f"Margin of Error: ±{margin_of_error:.2f}")
 ```
 
-### f. Cohen's d
+### f) Pooled Standard Deviation
+- **Equation:**
+- **$\[
+s_p = \sqrt{\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}}
+\]$**
+
+**Python Implementation**
+```python
+import numpy as np
+
+# Sample data for two groups
+sample1 = [100, 102, 98, 105, 110]
+sample2 = [110, 108, 115, 120, 117]
+
+# Calculate standard deviations for each group
+std1 = np.std(sample1, ddof=1)
+std2 = np.std(sample2, ddof=1)
+
+# Sample sizes
+n1 = len(sample1)
+n2 = len(sample2)
+
+# Calculate pooled standard deviation
+pooled_std = np.sqrt(((n1 - 1) * std1**2 + (n2 - 1) * std2**2) / (n1 + n2 - 2))
+print(f"Pooled Standard Deviation: {pooled_std:.2f}")
+```
+
+### g) Cohen's d
 - **Equation:**
 - **$\[
 d = \frac{\bar{x}_1 - \bar{x}_2}{s_p} \quad \text{where } s_p \text{ is the pooled standard deviation.}
@@ -118,7 +145,7 @@ cohens_d = (np.mean(sample1) - np.mean(sample2)) / pooled_std
 print(f"Cohen's d: {cohens_d:.2f}")
 ```
 
-### g. Z-Test
+### h) Z-Test
 - **Equation:**
 - **$\[
 z = \frac{\bar{x} - \mu}{\frac{\sigma}{\sqrt{n}}}
@@ -140,7 +167,7 @@ p_value = 2 * (1 - stats.norm.cdf(abs(z_stat)))
 print(f"Z-test statistic: {z_stat:.2f}, p-value: {p_value:.4f}")
 ```
 
-### h. T-Test
+### i) T-Test
 - **Equation for One-Sample T-Test:**
 - **$\[
 t = \frac{\bar{x} - \mu}{\frac{s}{\sqrt{n}}}
@@ -153,7 +180,7 @@ t_stat, p_value = stats.ttest_1samp(sample, mu)
 print(f"T-test statistic: {t_stat:.2f}, p-value: {p_value:.4f}")
 ```
 
-### i. Chi-Square Test
+### j) Chi-Square Test
 - **Equation:**
 - **$\[
 \chi^2 = \sum \frac{(O_i - E_i)^2}{E_i}
@@ -167,7 +194,7 @@ chi2_stat, p_value = stats.chisquare(observed, f_exp=expected)
 print(f"Chi-square statistic: {chi2_stat:.2f}, p-value: {p_value:.4f}")
 ```
 
-### j. ANOVA (Analysis of Variance)
+### k) ANOVA (Analysis of Variance)
 **Equation:**
 **$\[
 F = \frac{\text{Between-group variance}}{\text{Within-group variance}}
@@ -182,7 +209,7 @@ f_stat, p_value = stats.f_oneway(group1, group2, group3)
 print(f"ANOVA F-statistic: {f_stat:.2f}, p-value: {p_value:.4f}")
 ```
 
-### k. Probability Calculations
+### l) Probability Calculations
 - **Cumulative Distribution Function (CDF):**
 - **$\[
 P(X \leq x) = \text{CDF}(x)
