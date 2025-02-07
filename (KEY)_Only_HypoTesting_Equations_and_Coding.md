@@ -5,7 +5,7 @@ Hypothesis testing is a statistical method used to make inferences or draw concl
 
 ---
 ## 1. Key Terms and Definitions
-- **Null Hypothesis (H₀):** The default assumption or status quo.
+- **Null Hypothesis **$(H₀):$** The default assumption or status quo.
 - **Alternative Hypothesis (H₁):** The claim we seek evidence for.
 - **Significance Level (α):** The probability of rejecting the null hypothesis when it is true (commonly 0.05).
 - **Test Statistic:** A standardized value used to decide whether to reject H₀.
