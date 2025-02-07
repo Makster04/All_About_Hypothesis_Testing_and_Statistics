@@ -42,6 +42,20 @@ import numpy as np
 sample_std = np.std(sample, ddof=1)  # ddof=1 for sample standard deviation
 print(f"Sample standard deviation: {sample_std:.2f}")
 ```
+OR
+```python
+import math
+
+sample = [100, 102, 98, 105, 110, 95, 99, 101, 97]
+n = len(sample)
+sample_mean = sum(sample) / n
+
+# Calculate the variance
+variance = sum((x - sample_mean) ** 2 for x in sample) / (n - 1)
+# Calculate the standard deviation using math.sqrt
+sample_std = math.sqrt(variance)
+print(f"Sample standard deviation: {sample_std:.2f}")
+```
 
 ### d. Z-Score
 - **Equation:**
@@ -56,6 +70,15 @@ sigma = 15  # Population standard deviation
 z = (sample_mean - mu) / (sigma / np.sqrt(n))
 print(f"Z-score: {z:.2f}")
 ```
+OR
+```python
+import math
+
+mu = 100  # Population mean
+sigma = 15  # Population standard deviation
+z = (sample_mean - mu) / (sigma / math.sqrt(n))  # Use math.sqrt
+print(f"Z-score: {z:.2f}")
+```
 
 ### e. Margin of Error **$(ME)$**
 - **Equation:**
@@ -67,6 +90,14 @@ ME = z \times \frac{\sigma}{\sqrt{n}}
 ```python
 z_critical = 1.96  # for 95% confidence level
 margin_of_error = z_critical * (sigma / np.sqrt(n))
+print(f"Margin of Error: ±{margin_of_error:.2f}")
+```
+OR 
+```python
+import math
+
+z_critical = 1.96  # for 95% confidence level
+margin_of_error = z_critical * (sigma / math.sqrt(n))  # Use math.sqrt
 print(f"Margin of Error: ±{margin_of_error:.2f}")
 ```
 
@@ -96,6 +127,15 @@ z = \frac{\bar{x} - \mu}{\frac{\sigma}{\sqrt{n}}}
 **Python Implementation:**
 ```python
 z_stat = (sample_mean - mu) / (sample_std / np.sqrt(n))
+p_value = 2 * (1 - stats.norm.cdf(abs(z_stat)))
+print(f"Z-test statistic: {z_stat:.2f}, p-value: {p_value:.4f}")
+```
+OR
+```python
+import math
+from scipy import stats
+
+z_stat = (sample_mean - mu) / (sample_std / math.sqrt(n))  # Use math.sqrt
 p_value = 2 * (1 - stats.norm.cdf(abs(z_stat)))
 print(f"Z-test statistic: {z_stat:.2f}, p-value: {p_value:.4f}")
 ```
