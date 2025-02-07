@@ -6,15 +6,15 @@ Hypothesis testing is a statistical method used to make inferences or draw concl
 ---
 ## 1. Key Terms and Definitions
 - **Null Hypothesis **$(H₀):$** The default assumption or status quo.
-- **Alternative Hypothesis (H₁):** The claim we seek evidence for.
-- **Significance Level (α):** The probability of rejecting the null hypothesis when it is true (commonly 0.05).
+- **Alternative Hypothesis **$(H₁):$** The claim we seek evidence for.
+- **Significance Level **$(α):$** The probability of rejecting the null hypothesis when it is true (commonly 0.05).
 - **Test Statistic:** A standardized value used to decide whether to reject H₀.
 - **p-value:** The probability of observing the test results under H₀.
 - **Critical Value:** The threshold value that defines the rejection region.
 - **Sample Size (n):** The number of observations in the sample.
 - **Sample Mean (\( \bar{x} \)):** The average of the sample data.
 - **Standard Deviation (s or \( \sigma \)):** A measure of the dispersion of data points around the mean.
-- **Margin of Error (ME):** The range within which the true population parameter is expected to lie with a given level of confidence.
+- **Margin of Error **$(ME):$** The range within which the true population parameter is expected to lie with a given level of confidence.
 - **Cohen's d:** A measure of effect size.
 - **Probability Density Function (PDF), Cumulative Distribution Function (CDF), and Probability Mass Function (PMF):** Tools to describe the probability distributions of random variables.
 
