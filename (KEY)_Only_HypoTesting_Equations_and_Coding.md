@@ -55,9 +55,9 @@ print(f"Sample mean: {sample_mean:.2f}")
 
 ### c. Standard Deviation (s)
 **Equation:**
-\[
+**$\[
 s = \sqrt{\frac{\sum (x_i - \bar{x})^2}{n-1}}
-\]
+\]$**
 
 **Python Implementation:**
 ```python
