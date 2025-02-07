@@ -3,43 +3,9 @@
 ### Introduction to Hypothesis Testing
 Hypothesis testing is a statistical method used to make inferences or draw conclusions about a population based on sample data. It helps determine whether there is enough evidence to reject a null hypothesis (H₀) in favor of an alternative hypothesis (H₁).
 
----
-## 1. Key Terms and Definitions
-- **Null Hypothesis** **$(H₀):$** The default assumption or status quo.
-- 
-- **Alternative Hypothesis** **$(H₁):$** The claim we seek evidence for.
-- 
-- **Significance Level** **$(\alpha):$** The probability of rejecting the null hypothesis when it is true (commonly 0.05).
-- 
-- **Test Statistic:** A standardized value used to decide whether to reject $H₀$.
-- 
-- **p-value:** The probability of observing the test results under $H₀$.
-- 
-- **Critical Value:** The threshold value that defines the rejection region.
-- 
-- **Sample Size** **$(n):$** The number of observations in the sample.
-- 
-- **Sample Mean** **$( \bar{x} ):$** The average of the sample data.
-- 
-- **Standard Deviation** **$(s \text{ or } \sigma):$** A measure of the dispersion of data points around the mean.
-- 
-- **Margin of Error** **$(ME):$** The range within which the true population parameter is expected to lie with a given level of confidence.
-- 
-- **Cohen's d:** A measure of effect size.
-- 
-- **Probability Density Function (PDF), Cumulative Distribution Function (CDF), and Probability Mass Function (PMF):** Tools to describe the probability distributions of random variables.
-
----
-## 2. Types of Hypothesis Tests
-- **Z-test**
-- **T-test** (one-sample, two-sample, paired)
-- **Chi-square test**
-- **ANOVA (Analysis of Variance)**
-
----
 ## 3. Equations and Python Implementation
 
-### a. Sample Size (n)
+### a. Sample Size **$(n)$**
 - **Equation:**
 - **$\[
 n = \text{number of data points in the sample}
@@ -52,11 +18,11 @@ n = len(sample)
 print(f"Sample size: {n}")
 ```
 
-### b. Sample Mean (\( \bar{x} \))
+### b. Sample Mean **$( \bar{x} )$**
 - **Equation:**
-- **$\[
+- **$ \[
 \bar{x} = \frac{\sum x_i}{n}
-\]$**
+\] $**
 
 **Python Implementation:**
 ```python
@@ -64,7 +30,7 @@ sample_mean = sum(sample) / n
 print(f"Sample mean: {sample_mean:.2f}")
 ```
 
-### c. Standard Deviation (s)
+### c. Standard Deviation **$(s)$**
 - **Equation:**
 - **$\[
 s = \sqrt{\frac{\sum (x_i - \bar{x})^2}{n-1}}
@@ -78,7 +44,7 @@ print(f"Sample standard deviation: {sample_std:.2f}")
 ```
 
 ### d. Z-Score
-**Equation:**
+- **Equation:**
 - **$\[
 z = \frac{\bar{x} - \mu}{\frac{\sigma}{\sqrt{n}}}
 \]$**
@@ -91,7 +57,7 @@ z = (sample_mean - mu) / (sigma / np.sqrt(n))
 print(f"Z-score: {z:.2f}")
 ```
 
-### e. Margin of Error (ME)
+### e. Margin of Error **$(ME)$**
 - **Equation:**
 - **$\[
 ME = z \times \frac{\sigma}{\sqrt{n}}
@@ -121,7 +87,62 @@ cohens_d = (np.mean(sample1) - np.mean(sample2)) / pooled_std
 print(f"Cohen's d: {cohens_d:.2f}")
 ```
 
-### g. Probability Calculations
+### g. Z-Test
+- **Equation:**
+- **$\[
+z = \frac{\bar{x} - \mu}{\frac{\sigma}{\sqrt{n}}}
+\]$**
+
+**Python Implementation:**
+```python
+z_stat = (sample_mean - mu) / (sample_std / np.sqrt(n))
+p_value = 2 * (1 - stats.norm.cdf(abs(z_stat)))
+print(f"Z-test statistic: {z_stat:.2f}, p-value: {p_value:.4f}")
+```
+
+### h. T-Test
+- **Equation for One-Sample T-Test:**
+- **$\[
+t = \frac{\bar{x} - \mu}{\frac{s}{\sqrt{n}}}
+\]$**
+
+**Python Implementation:**
+```python
+from scipy import stats
+t_stat, p_value = stats.ttest_1samp(sample, mu)
+print(f"T-test statistic: {t_stat:.2f}, p-value: {p_value:.4f}")
+```
+
+### i. Chi-Square Test
+- **Equation:**
+- **$\[
+\chi^2 = \sum \frac{(O_i - E_i)^2}{E_i}
+\]$**
+
+**Python Implementation:**
+```python
+observed = [50, 30, 20]
+expected = [40, 40, 20]
+chi2_stat, p_value = stats.chisquare(observed, f_exp=expected)
+print(f"Chi-square statistic: {chi2_stat:.2f}, p-value: {p_value:.4f}")
+```
+
+### j. ANOVA (Analysis of Variance)
+**Equation:**
+**$\[
+F = \frac{\text{Between-group variance}}{\text{Within-group variance}}
+\]$**
+
+**Python Implementation:**
+```python
+group1 = [100, 102, 98, 105]
+group2 = [110, 108, 115, 120]
+group3 = [95, 100, 98, 97]
+f_stat, p_value = stats.f_oneway(group1, group2, group3)
+print(f"ANOVA F-statistic: {f_stat:.2f}, p-value: {p_value:.4f}")
+```
+
+### k. Probability Calculations
 - **Cumulative Distribution Function (CDF):**
 - **$\[
 P(X \leq x) = \text{CDF}(x)
@@ -155,8 +176,9 @@ print(f"PMF for k = {k} successes in {n} trials: {p_pmf:.4f}")
 
 ---
 ## 4. Decision Rules
-- If **p-value < α**, reject the null hypothesis (H₀).
-- If **p-value ≥ α**, fail to reject the null hypothesis.
+- If **p-value < \alpha**, reject the null hypothesis **$(H₀)$**.
+- If **p-value ≥ \alpha**, fail to reject the null hypothesis.
+
 
 ---
 ## 5. Summary Table
