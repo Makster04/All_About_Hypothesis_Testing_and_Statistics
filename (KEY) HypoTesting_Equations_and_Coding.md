@@ -1,7 +1,7 @@
 # Hypothesis Testing Guide in Python
 
 ### Introduction to Hypothesis Testing
-Hypothesis testing is a statistical method used to make inferences or draw conclusions about a population based on sample data. It helps determine whether there is enough evidence to reject a null hypothesis (H₀) in favor of an alternative hypothesis (H₁).
+Hypothesis testing is a statistical method used to make inferences or draw conclusions about a population based on sample data. It helps determine whether there is enough evidence to reject a null hypothesis (H₀)  in favor of an alternative hypothesis (H₁).
 
 ## 3. Equations and Python Implementation
 
