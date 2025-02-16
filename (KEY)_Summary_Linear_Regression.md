@@ -17,7 +17,7 @@ Where:
 - **y**: Target (dependent) variable
 - **xₑ**: Independent variables (features)
 - **\(\beta_0\)**: Intercept
-- **\(\beta_i\)**: Coefficients for each feature
+- $$\(\beta_i\)$$: Coefficients for each feature
 - **\(\epsilon\)**: Error term (residual)
 
 ---
