@@ -14,7 +14,7 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon
 \]$$
 
 Where:
-- $$**y**$$: Target (dependent) variable
+- $**y**$: Target (dependent) variable
 - $$**xₑ**$$: Independent variables (features)
 - $$**\(\beta_0\)**$$: Intercept
 - $$**\(\beta_i\)**$$: Coefficients for each feature
