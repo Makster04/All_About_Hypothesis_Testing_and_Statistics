@@ -14,11 +14,11 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon
 \]$$
 
 Where:
-- **y**: Target (dependent) variable
-- **xₑ**: Independent variables (features)
-- **\(\beta_0\)**: Intercept
+- $$y$$: Target (dependent) variable
+- $$xₑ$$: Independent variables (features)
+- $$\(\beta_0\)$$: Intercept
 - $$\(\beta_i\)$$: Coefficients for each feature
-- **\(\epsilon\)**: Error term (residual)
+- $$\(\epsilon\)$$: Error term (residual)
 
 ---
 
@@ -29,7 +29,7 @@ $$\[
 SSE = \sum (y_i - \hat{y}_i)^2
 \]$$
 
-The coefficients \(\beta_0, \beta_1, \dots, \beta_n\) are chosen to minimize this error.
+The coefficients $$\(\beta_0, \beta_1, \dots, \beta_n\)$$ are chosen to minimize this error.
 
 ---
 
@@ -142,10 +142,10 @@ plt.show()
 Regularization helps reduce overfitting by adding a penalty term to the loss function. It controls the size of the coefficients:
 
 - **Ridge Regression (L2 Regularization)**: Adds the sum of squared coefficients to the loss function.
-  \[ \text{Loss} = \text{SSE} + \lambda \sum \beta_i^2 \]
+  $$\[ \text{Loss} = \text{SSE} + \lambda \sum \beta_i^2 \]$$
   
 - **Lasso Regression (L1 Regularization)**: Adds the sum of absolute values of coefficients to the loss function.
-  \[ \text{Loss} = \text{SSE} + \lambda \sum |\beta_i| \]
+  $$\[ \text{Loss} = \text{SSE} + \lambda \sum |\beta_i| \]$$
   
   Lasso can shrink some coefficients to zero, effectively performing feature selection.
 
