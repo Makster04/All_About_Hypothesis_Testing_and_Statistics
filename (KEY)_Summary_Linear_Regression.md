@@ -18,11 +18,23 @@ Linear Regression is a fundamental statistical and machine learning technique us
   $$\[ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon \]$$
 
 Where:
-- $$\( y \)$$ = Dependent (target) variable
-- $$\( x_i \)$$ = Independent (predictor) variables
-- $$\( \beta_0 \)$$ = Intercept
-- $$\( \beta_i \)$$ = Coefficients (weights) for each independent variable
-- $$\( \epsilon \)$$ = Error term (residual)
+# Key Terms in Linear Regression
+
+- $$\( y \)$$ **(Dependent Variable)**:  
+  The target or outcome variable that we are trying to predict based on the independent variables. It depends on the values of $$\( x_i \)$$.  
+
+- $$\( x_i \)$$ **(Independent Variables / Predictors)**:  
+  The input features or explanatory variables used to predict $$\( y \)$$. These are the variables that influence the dependent variable.  
+
+- $$\( \beta_0 \)$$ **(Intercept)**:  
+  The constant term in the regression equation, representing the predicted value of $$\( y \)$$ when all independent variables are zero.  
+
+- $$\( \beta_i \)$$ **(Coefficients / Weights)**:  
+  The parameters that determine the influence of each independent variable on the dependent variable. Each $$\( \beta_i \)$$ represents the change in $$\( y \)$$ for a one-unit change in $$\( x_i \)$$, assuming all other variables remain constant.  
+
+- $$\( \epsilon \)$$ **(Error Term / Residuals)**:  
+  The difference between the actual observed values of $$\( y \)$$ and the predicted values. It accounts for variability in $$\( y \)$$ that is not explained by the independent variables.  
+
 
 ---
 
