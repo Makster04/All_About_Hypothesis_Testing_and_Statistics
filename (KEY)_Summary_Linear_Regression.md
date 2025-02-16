@@ -9,9 +9,9 @@
 ## 2. Equation of Linear Regression
 The linear regression model is represented by the equation:
 
-\[
+$$\[
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon
-\]
+\]$$
 Where:
 - **y**: Target (dependent) variable
 - **xₑ**: Independent variables (features)
