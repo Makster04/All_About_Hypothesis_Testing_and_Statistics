@@ -10,15 +10,16 @@ Linear Regression is a fundamental statistical and machine learning technique us
 - Involves one independent variable and one dependent variable.
 - The relationship is modeled with a straight line.
 - Equation:
+
   $$\[ y = \beta_0 + \beta_1 x + \epsilon \]$$
 
 ### b. Multiple Linear Regression
 - Involves two or more independent variables.
 - Equation:
+
   $$\[ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon \]$$
 
 Where:
-# Key Terms in Linear Regression
 
 - $$\( y \)$$ **(Dependent Variable)**:  
   The target or outcome variable that we are trying to predict based on the independent variables. It depends on the values of $$\( x_i \)$$.  
