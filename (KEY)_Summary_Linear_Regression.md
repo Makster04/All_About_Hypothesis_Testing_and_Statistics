@@ -25,9 +25,10 @@ Where:
 ## 3. Objective
 Minimize the sum of squared errors (SSE) between predicted and actual values:
 
-\[
+$$\[
 SSE = \sum (y_i - \hat{y}_i)^2
-\]
+\]$$
+
 The coefficients \(\beta_0, \beta_1, \dots, \beta_n\) are chosen to minimize this error.
 
 ---
