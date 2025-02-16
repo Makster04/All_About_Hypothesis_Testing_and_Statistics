@@ -61,12 +61,19 @@ Where:
 
 ## 5. Evaluation Metrics for Linear Regression
 - **Mean Absolute Error (MAE):**
+
   $$\[ MAE = \frac{1}{n} \sum |y_i - \hat{y}_i| \]$$
+  
 - **Mean Squared Error (MSE):**
+
   $$\[ MSE = \frac{1}{n} \sum (y_i - \hat{y}_i)^2 \]$$
+
 - **Root Mean Squared Error (RMSE):**
+
   $$\[ RMSE = \sqrt{MSE} \]$$
-- **R-Squared (\( R^2 \)) Coefficient:**
+
+- **R-Squared $$(\( R^2 \))$$ Coefficient:**
+
   $$\[ R^2 = 1 - \frac{SS_{residual}}{SS_{total}} \]$$
 
 Where:
