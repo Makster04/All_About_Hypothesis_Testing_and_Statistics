@@ -99,7 +99,9 @@ Regularization helps prevent overfitting by adding penalty terms to the loss fun
 ## 7. Polynomial Regression
 - Extends linear regression by fitting a polynomial function to the data.
 - Equation:
+
   $$\[ y = \beta_0 + \beta_1 x + \beta_2 x^2 + \dots + \beta_n x^n + \epsilon \]$$
+  
 - Useful for capturing non-linear relationships.
 
 ---
