@@ -154,6 +154,9 @@ plt.title("Linear Regression - Salary Prediction")
 plt.legend()
 plt.show()
 ```
+```(101813.31747919036, 0.9989818668252081)```
+![image](https://github.com/user-attachments/assets/ece9468c-487a-4202-b0b9-bd7f97e6febd)
+
 
 ---
 
