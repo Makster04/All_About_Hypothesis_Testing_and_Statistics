@@ -49,42 +49,42 @@ Machine Learning (ML) is a branch of artificial intelligence (AI) that focuses o
 
 Linear regression models the relationship between dependent and independent variables:
 
-\[
+$$\[
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n + \epsilon
-\]
+\]$$
 
 where:
-- \( y \) = Predicted value
-- \( x_i \) = Features
-- \( \beta_i \) = Coefficients (weights)
-- \( \epsilon \) = Error term
+- $$\( y \)$$ = Predicted value
+- $$\( x_i \)$$ = Features
+- $$\( \beta_i \)$$ = Coefficients (weights)
+- $$\( \epsilon \)$$ = Error term
 
 ### 2. Logistic Regression (for Binary Classification)
 
-\[
+$$\[
 P(Y=1|X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n)}}
-\]
+\]$$
 
-where \( P(Y=1|X) \) represents the probability of class 1.
+where $$\( P(Y=1|X) \)$$ represents the probability of class 1.
 
 ### 3. Cost Function for Linear Regression (Mean Squared Error - MSE)
 
-\[
+$$\[
 J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_{\theta}(x^{(i)}) - y^{(i)})^2
-\]
+\]$$
 
 where:
-- \( m \) = Number of training samples
-- \( h_{\theta}(x) \) = Predicted value
-- \( y \) = Actual value
+- $$\( m \)$$ = Number of training samples
+- $$\( h_{\theta}(x) \)$$ = Predicted value
+- $$\( y \)$$ = Actual value
 
 ### 4. Gradient Descent Update Rule
 
-\[
+$$\[
 \theta_j := \theta_j - \alpha \frac{\partial J(\theta)}{\partial \theta_j}
-\]
+\]$$
 
-where \( \alpha \) is the learning rate.
+where $$\( \alpha \)$$ is the learning rate.
 
 ## Python Code for Machine Learning
 
