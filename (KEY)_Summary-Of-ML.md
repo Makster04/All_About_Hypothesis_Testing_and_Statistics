@@ -1,4 +1,4 @@
-# Intoroduction to Machine Learning (ML)
+# Introduction to Machine Learning (ML)
 
 ## Supervised Learning
 
